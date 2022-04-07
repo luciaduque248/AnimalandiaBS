@@ -70,12 +70,12 @@ h1 {
 
 /* ::::::::::::::::::::::: MEDIA QUERIE: Celular ::::::::::::::::::::::::::::::: */
 
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (-webkit-min-device-pixel-ratio:0) {
     .slide1{flex-direction: column;}
 
 }
 
 /* ::::::::::::::::::::::: MEDIA QUERIE: tableta ::::::::::::::::::::::::::::::: */
-@media (min-width: 481px) and (max-width: 767px) {
+@media (min-width: 481px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio:0) {
     .slide1{flex-direction: column;}
 }
