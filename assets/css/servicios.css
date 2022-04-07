@@ -73,10 +73,14 @@ h1 {
 @media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (-webkit-min-device-pixel-ratio:0) {
     .slide1{flex-direction: column;}
     .imagenes{margin: 0 auto; object-fit: contain;}
+    .carousel-item{height: 500px;}
+    .card-text{width: 100%; max-width: 100px;}
 }
 
 /* ::::::::::::::::::::::: MEDIA QUERIE: tableta ::::::::::::::::::::::::::::::: */
 @media (min-width: 481px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio:0) {
     .slide1{flex-direction: column;}
     .imagenes{margin: 0 auto; object-fit: contain;}
+    .carousel-item{height: 500px;}
+    .card-text{width: 100%; max-width: 100px;}
 }
