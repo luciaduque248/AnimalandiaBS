@@ -96,7 +96,6 @@ h1 {
 
 }
 
-
 /* ::::::::::: MEDIA QUERIE: Iphone XR ::::::::::: */
 @media only screen 
     and (device-width : 414px) 
@@ -123,6 +122,7 @@ h1 {
         .card-text p{font-size: 13px;}
         .consultav{margin-bottom: 1.5rem;}
     }
+
 
 /* ::::::::::: MEDIA QUERIE: iPhone 6/7/8 ::::::::::: */
 @media only screen 
