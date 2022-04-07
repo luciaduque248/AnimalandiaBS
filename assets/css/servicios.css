@@ -88,6 +88,11 @@ h1 {
 /* ::::::::::::::::::::::: MEDIA QUERIE: tableta ::::::::::::::::::::::::::::::: */
 @media (min-width: 481px) and (max-width: 767px) and (-webkit-min-device-pixel-ratio:0) {
     .header-buttons{display: flex; display: row;}
+    .carousel-inner{padding: 0 4rem;}
+    .carousel{height: 500px;}
+    .carousel-item{height: 450px;}
     .card-text{width: 100%; max-width: 350px;}
+    .card-text p{font-size: 13px;}
+
 }
 
