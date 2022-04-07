@@ -1,0 +1,453 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --dark-color: #191919;
+    --white-color:#ffffff;
+    --purple-color: rgb(117, 41, 149);
+    --purplelight-color: rgb(169, 83, 206);
+    --aqua-color: aqua;
+    --gray-color: gray;
+    --ligh-color: #F3F3F3;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+/* ::::::::::::::::::::::::::::::::::::::: HEADER :::::::::::::::::::::::::::::::::::::: */
+.header a{
+    text-decoration: none;
+    color: rgb(117, 41, 149);
+}
+
+header p a{
+    text-decoration: none;
+    color: rgb(139, 0, 139);
+}
+
+header .row{
+    padding: 1rem 1.5rem;
+    
+}
+
+
+.header-logo img{
+    width: 300px;
+}
+
+span{
+    line-height: 15px;
+    padding: 0.5rem;
+}
+
+span i{
+    margin-left: 0.5rem;
+    font-size: 20px;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header img{
+    width: 60px;
+    border-radius: 50px;
+    border: 3px solid rgb(139, 0, 139);
+}
+
+.header{
+    color: rgb(139, 0, 139);
+    display: flex;
+    align-items: center;
+}
+
+header a i{
+    font-size: 20px;
+    
+}
+
+header p{
+    color: black;
+    text-align: center;
+}
+
+
+/* ::::::::::::::::::::::::::::::::::::::: CONTENIDO :::::::::::::::::::::::::::::::::::::: */
+
+.sidebar{
+    flex-basis: 10%;
+    max-width: 800px;
+    width: 100%;
+    background-color: rgb(19, 18, 18);
+    height: 468px;
+    color: white;
+}
+
+.sidebar ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar a{
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    display: block;
+    text-align: left;
+}
+.sidebar a{
+    background-color: rgb(19, 18, 18);
+    transition: all 1s;
+    color: white;
+    width: 370px;
+}
+
+.sidebar a:hover{
+    background-color: purple;
+    border-left: 3px solid white;
+    padding-left: 50px;
+    transition: all 1s;
+    color: black;
+    width: 300px;
+}
+
+.sidebar i{
+    margin-right: 0.5rem;
+}
+
+
+.row input{
+    max-width: 600px;
+    width: 100%;
+}
+
+main{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+}
+/* ::::::::::::::::::::::::::::::::::::::: FONDO BLANCO CON EL CONTENIDO :::::::::::::::::::::::::::::::::::::: */
+
+.container{
+    place-items: center;
+    padding: 2rem;
+    max-width: 990px;
+    width: 100%;
+}
+
+.linea1{
+    margin-bottom: 1rem;
+}
+
+.linea1 h1{
+    padding: 0 10rem;
+    display: flex;
+    align-items: center;
+}
+
+.linea1 a{
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(117, 41, 149);
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 0 1rem;
+    color: white;
+    border-radius: 5px;
+}
+
+.linea1 img{
+    border-radius: 50%;
+    border: 5px solid rgb(117, 41, 149);
+    width: 100%;
+    max-width: 100px;
+}
+
+.linea2{
+    margin-bottom: 1rem;
+}
+
+.linea2 a{
+    text-decoration: none;
+    background-color: rgb(117, 41, 149);
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.5rem;
+    padding: 0 0.5rem;
+    color: white;
+    border-radius: 5px;
+}
+
+.linea2 .form-control{
+    padding: 1rem;
+    font-size: 15px;
+}
+
+table{
+    border: #191919;
+    max-width: 1000px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead,
+tbody,
+tr,
+td,
+th {
+  border-color: black;
+  border-style: solid;
+}
+
+
+.boton{
+    background-color: aqua;
+    border: 0px solid;
+    padding: 0.5rem 1rem;
+    font-size: 15px;
+}
+
+.boton-margin{
+    width: 10px;
+    padding: 1rem 2rem;
+}
+
+.imagen-copy{
+    display: flex;
+    border: none;
+    justify-content: center;
+}
+
+.imagen-copy img{
+    margin: 0.5rem 1rem;
+    width: 100%;
+    max-width: 60px;
+}
+
+th{padding: 1rem 0.5rem;}
+
+table{text-align: center;}
+
+
+
+/* ::::::::::::::::::::::: MEDIA QUERIE: Celular ::::::::::::::::::::::::::::::: */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    header{
+        padding: 0 0rem;
+    }
+
+    .header{
+        padding: 1rem 3rem;
+    }
+    
+    .boton{
+        background-color: aqua;
+        border: 0px solid;
+        padding: 0.5rem 1rem;
+        font-size: 10px;
+    }
+    
+    .boton-margin{
+        width: 10px;
+        padding: 0rem;
+    }
+
+    .imagen-copy img{
+        padding: 0 5px;
+        width: 100%;
+        max-width: 60px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .row{flex-direction: column;}
+    
+    .inicio p{margin-left: 9rem;}
+    .inicio p a i{padding: 0; margin: 10px;}
+    
+    .linea1{
+        display: flex;
+        flex-direction: column;
+    }
+    .linea1 h1{
+        text-align: center;
+        padding: 1rem 0 0 0;
+        display: flex;
+        align-items: center;
+    }
+    .linea1 img{
+        margin: 0 auto;
+    }
+
+    .linea1 a{
+        width: 95%;
+        padding: 0 5rem;
+        margin: 10px auto;
+    }
+    .sidebar{width: 100%; max-width: 10px;}
+    main{overflow: hidden;}
+    .row input{
+        max-width: 500px;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .linea2 a{
+        border: 5px solid rgb(117, 41, 149);
+        width: 95%;
+        margin: 0 auto;
+    }
+    table{text-align: center;}
+
+    table {
+        display: block;
+        overflow-x: auto;
+      }
+    
+
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::: RESPONSIVE: medio ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+@media screen and (min-width:768px) {
+    .row{flex-direction: row;}
+    .row input{width: 800px;
+    }
+
+    header{
+        padding: 0 0rem;
+    }
+
+    .header{
+        padding: 1rem 3rem;
+    }
+    
+
+
+    .imagen-copy img{
+        padding: 0 5px;
+        width: 100%;
+        max-width: 60px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .inicio p{margin-left: 9rem;}
+    .inicio p a i{padding: 0; margin: 10px;}
+    
+    .linea1{
+        margin-left: 4rem;
+        display: flex;
+        flex-direction: column;
+        padding: 0 9rem;
+    }
+    .linea1 h1{
+        width: 400px; 
+        text-align: center;
+        padding: 1rem;
+        display: flex;
+    }
+    .linea1 img{
+        margin: 0 auto;
+    }
+
+    .linea1 a{
+        width: 50%;
+        padding: 0 3.5rem;
+        margin: auto;
+    }
+    .sidebar{width: 100%; max-width: 10000px;}
+    main{overflow: hidden;}
+
+    .linea2 a{
+        border: 5px solid rgb(117, 41, 149);
+        width: 95%;
+        margin: 0 1rem;
+    }
+    table{text-align: center;}
+
+}
+
+/* :::::::::::::::::::::::::::::::::::::::::::: RESPONSIVE: medio ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+@media screen and (min-width:1024px) {
+    .row{flex-direction: column;}
+    .row{flex-direction: column;}
+    .row input{width: 800px;
+    }
+
+    header{
+        padding: 0 0rem;
+    }
+
+    .header{
+        padding: 1rem 3rem;
+    }
+    
+
+
+    .imagen-copy img{
+        padding: 0 5px;
+        width: 100%;
+        max-width: 60px;
+    }
+
+    main{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .inicio p{margin-left: 9rem;}
+    .inicio p a i{padding: 0; margin: 10px;}
+    
+    .linea1{
+        display: flex;
+        flex-direction: column;
+        padding: 0 9rem;
+    }
+    .linea1 h1{
+        width: 800px;
+        display: flex;
+        justify-content: center;
+    }
+    .linea1 img{
+        margin-left: -200px;
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .linea1 a{
+        width: 90%;
+    }
+
+    .agregar{margin-right: -8rem; margin-top: 3rem;width: 300px}
+    .sidebar{width: 100%; max-width: 10000px;}
+    main{overflow: hidden;}
+
+    .linea2 a{
+        border: 5px solid rgb(117, 41, 149);
+        width: 95%;
+        margin: 0 1rem;
+    }
+    table{text-align: center;}
+}
+/* :::::::::::::::::::::::::::::::::::::::::::: RESPONSIVE: medio ::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+@media screen and (min-width:1200px) {
+    .row{flex-direction: row;}
+}

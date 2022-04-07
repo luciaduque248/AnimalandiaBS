@@ -1,0 +1,442 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+nav{
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    padding: 0.5rem;
+    width: 100vw;
+}
+#chk-menu{
+    display: none;
+}
+#chk-menu:checked ~ .items{
+    display:block;
+    display: flex;
+    flex-direction: column;
+}
+.btn-menu{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    
+}
+.items{
+    width: 100vw;
+    display: none;
+    flex-direction: column;
+}
+.item{
+    padding: 0.7rem;
+    text-decoration: none;
+    color: white;
+}
+.item:hover{
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* :::::::::::::::::::::::::::::::: SLIDER :::::::::::::::::::::::::::::::::*/
+.slider{
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-ul{
+    list-style: none;
+    width: 400%;
+    height: 400px;
+    display: flex;
+    animation: moverslide 20s infinite;
+}
+
+@keyframes moverslide{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+    70%{margin-left: -200%;}
+    75%{margin-left: -300%;}
+}
+
+.slider-li{
+    height: 100%;
+    width: 25%;
+    border: 2px solid #191919;
+
+}
+
+.slider-li:nth-child(1){
+    background-image: url(../img/banner_equipo.svg);
+    background-size: cover;
+}
+
+.slider-li:nth-child(2){
+    background-image: url(../img/banner_vacio.svg);
+    background-size: cover;
+}
+
+.slider-li:nth-child(3){
+    background-image: url(../img/banner.jpeg);
+    background-size: cover;
+}
+
+.slider-li:nth-child(4){
+    background-image: url(../img/banner_vacio.svg);
+    background-size: cover;
+}
+
+
+/* :::::::::::::::::::::::::::::::: CLICK :::::::::::::::::::::::::::::::::*/
+
+.caja{
+    background-color: aqua;
+    text-align: center;
+    width: 100px;
+    padding: 1rem;
+    margin: 1rem auto;
+}
+
+.click:hover{
+    animation: 0.7s click 1;
+}
+
+@keyframes click{
+    25%, 75%{transform: scale(0.8)}
+    50%{transform: scale(1.1);}
+}
+
+/* :::::::::::::::::::::::::::::::: Cartel :::::::::::::::::::::::::::::::::*/
+.cartel:hover{
+    animation: 1s cartel 1;
+    transform-origin: top center;
+}
+
+@keyframes cartel{
+    20%{transform: rotate(15deg);}
+    40%{transform: rotate(-10deg);}
+    60%{transform: rotate(5deg);}
+    80%{transform: rotate(-3deg);}
+}
+/* :::::::::::::::::::::::::::::::: ZOOM ROTATE :::::::::::::::::::::::::::::::::*/
+.zoomrotate{
+    animation: 3s zoomrotate 1;
+}
+
+@keyframes zoomrotate{
+    20%{transform: scale(0.7); rotate: (-6deg);}
+    30%, 70%{transform: scale(1.1); rotate: (6deg);}
+    50%, 90%{transform: scale(1.1); rotate: (-6deg);}
+}
+/* :::::::::::::::::::::::::::::::: REBOTE :::::::::::::::::::::::::::::::::*/
+.rebote{
+    animation: 3s rebote 1;
+}
+
+@keyframes rebote{
+    20%, 50%, 80%{transform: translateY(0px);}
+    30%{transform: translateY(-45px);}
+    60%{transform: translateY(-25px);}
+}
+/* :::::::::::::::::::::::::::::::: FADE IN :::::::::::::::::::::::::::::::::*/
+.fadein:hover{
+    animation: 2s fadein 1;
+}
+
+@keyframes fadein{
+    0%{opacity: 0;}
+    50%{opacity: 0.8;}
+}
+/* :::::::::::::::::::::::::::::::: FADE OUT :::::::::::::::::::::::::::::::::*/
+.fadeout:hover{
+    animation: 4s fadeout 1;
+}
+
+@keyframes fadeout{
+    15%{opacity: 1;}
+    100%{transform: translateX(-700%); skewX:(-70deg);opacity: 0;}
+}
+
+
+/* :::::::::::::::::::::::::::::::: LOGOS :::::::::::::::::::::::::::::::::*/
+#logos{
+    background-image: url(../img/empresa.jpeg);
+}
+
+.logos{
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: white;
+    padding: 2rem;
+
+}
+
+.logo1 i, .logo2 i, .logo3 i, .logo4 i{
+    font-size: 5rem;
+}
+
+.logo1{
+    animation: patrocinadores 1.5s ease-in 2s 1;
+}
+
+.logo2{
+    animation: patrocinadores 1.5s ease-in 4s 1;
+}
+
+.logo3{
+    animation: patrocinadores 1.5s ease-in 6s 1;
+}
+
+.logo4{
+    animation: patrocinadores 1.5s ease-in 8s 1;
+}
+
+@keyframes patrocinadores{
+    20%{transform: translateY(-10px);}
+}
+
+/* :::::::::::::::::::::::::::::::: barra slide :::::::::::::::::::::::::::::::::*/
+#slider{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+    overflow: hidden;
+}
+
+#slider input[type=radio]{
+    display: none;
+}
+
+#slider label{
+    cursor: pointer;
+}
+
+#slide1:checked ~ #slides .inner{
+    margin-left: 0;
+}
+
+#slide2:checked ~ #slides .inner{
+    margin-left: -100%;
+}
+
+#slide3:checked ~ #slides .inner{
+    margin-left: -200%;
+}
+
+#slide4:checked ~ #slides .inner{
+    margin-left: -300%;
+}
+
+#slides .inner{
+    width: 400%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: margin-left 1s cubic-bezier(.11, .9, .78, .1);
+}
+
+#slides .slide{
+    width: 25%;
+    height: 100%;
+}
+
+#slides .slide_1{
+    background-image: url(../img/gatoSlide1.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#slides .slide_2{
+    background-image: url(../img/perroSlide2.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+#slides .slide_3{
+    background-image: url(../img/gatoSlide3.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+#slides .slide_4{
+    background-image: url(../img/clinicaSlide4.jpg_large);
+    background-size: cover;
+    background-position: center;
+}
+
+.controllers{
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
+.bullets{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bullets label{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border-radius: 100%;
+    margin: 1rem;
+}
+
+#slide1:checked ~ .bullets label:nth-child(1),
+#slide2:checked ~ .bullets label:nth-child(2),
+#slide3:checked ~ .bullets label:nth-child(3),
+#slide4:checked ~ .bullets label:nth-child(4){
+    background-color: aqua;
+}
+
+
+/* :::::::::::::::::::::::::::::::: BARRA SLIDE 2 :::::::::::::::::::::::::::::::::*/
+#slider1{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    align-content: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+#slider1 input[type=radio]{
+    display: none;
+}
+
+#slider1-1 label{
+    cursor: pointer;
+}
+
+#slide1-1:checked ~ #slides1 .inner{
+    margin-left: 0;
+}
+
+#slide2-1:checked ~ #slides1 .inner{
+    margin-left: -100%;
+}
+
+#slide3-1:checked ~ #slides1 .inner{
+    margin-left: -200%;
+}
+
+#slide4-1:checked ~ #slides1 .inner{
+    margin-left: -300%;
+}
+
+#slides1 .inner{
+    width: 400%;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: margin-left 1s cubic-bezier(.11, .9, .78, .1);
+}
+
+#slides1 .slide1{
+    width: 25%;
+    height: 100%;
+}
+
+#slides1 .slide_1-1{
+    background-image: url(../img/ventas.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+#slides1 .slide_2-1{
+    background-image: url(../img/descuentos.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+#slides1 .slide_3-1{
+    background-image: url(../img/diseñaTuLook.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+#slides1 .slide_4-1{
+    background-image: url(../img/tendencias.gif);
+    background-size: cover;
+    background-position: center;
+}
+
+.controllers1{
+    display: none;
+    width: 50px;
+    height: 50px;
+}
+
+.bullets1{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bullets1 label{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    margin: 1rem;
+}
+
+#slide1-1:checked ~ .bullets1 label:nth-child(1),
+#slide2-1:checked ~ .bullets1 label:nth-child(2),
+#slide3-1:checked ~ .bullets1 label:nth-child(3),
+#slide4-1:checked ~ .bullets1 label:nth-child(4){
+    background-color: aqua;
+}
+
+.slide-content1{
+    color: purple;
+    padding: 5rem 0;
+    font-size: 30px;
+
+}
+
+
+
+/* :::::::::::::::::::::::::::::::: adaptar a dispositivos :::::::::::::::::::::::::::::::::*/
+@media screen and (min-width: 1024px){
+    body{
+        background-color: red;
+    }
+    nav{
+        width: 100%;
+        max-width: 2000px;
+        
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        position: initial;
+    }
+    .items{
+        
+        display: block;
+        padding: 0.5rem;
+    }
+
+    .btn-menu{
+        display: none;
+    }
+    
+}

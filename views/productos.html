@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Animalandia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../assets/css/productos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <div class="container-fluid d-flex flex-column">
+        <header>
+            <div class="row align-items-center">
+                <div class="header-logo ">
+                    <img src="../assets/img/logo.jpg" >
+                </div>
+                <div class="header d-flex ">
+                    <img src="../assets/img/golden.jpg" alt="perro golden">
+                    <span>
+                        <a href="./login.html"><strong>Bienvenido,</strong><br>usuario<i class="bi bi-box-arrow-right"></i></a>
+                    </span>
+                </div>
+                
+            </div>
+            <p><a href="/views/dashboard.html"><i class="bi bi-arrow-counterclockwise"></i>Inicio</a></p>
+
+        </header>
+
+        <main class="bg-secondary">
+            <div class="sidebar">
+                <ul>
+                    <li><a href="usuario.html"><i class="bi bi-person-fill"></i>Usuarios</a></li>
+                    <li><a href="cliente.html"><i class="bi bi-people-fill"></i>Clientes</a></li>
+                    <li><a href="productos.html"><i class="bi bi-tag-fill"></i>Productos</a></li>
+                    <li><a href="pedidos.html"><i class="bi bi-cart-fill"></i>Pedidos</a></li>
+                    <li><a href="reportes.html"><i class="bi bi-graph-up-arrow"></i>Reportes</a></li>
+                </ul>
+            </div>
+            
+            <div class="container content">
+                <div class="linea1 row ">
+                    <img src="../assets/img/golden.jpg" alt="">
+                    <h1>Gestion de productos</h1>
+                    <div class="agregar">
+                        <a href="../views/productosAdd.html">Agregar</a>
+                    </div>
+                    
+                </div>
+                
+                <div class="linea2 row">
+                    <div class="col">
+                        <input type="password" class="form-control" id="inputPassword" placeholder="Ingresa el producto a consultar">
+                      </div>
+                    <a href="">Buscar</a>
+                </div>
+
+                <div class="linea3">
+                    <table class="table">
+                        <thead style="background-color: rgb(117, 41, 149); color: white;">
+                            <tr>
+                                <th scope="col">ID Producto</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Caracteristicas</th>
+                                <th scope="col">Precio</th>
+                                <th scope="col">Estado</th>
+                                <th colspan="2">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Bola de perro</td>
+                                <td>Juguete</td>
+                                <td>$000.000</td>
+                                <td>Disponible</td>
+                                <td class="imagen-copy"><img src="../assets/img/otras/modificar.png" alt=""></td>
+                                <td class="boton-margin"><button type="button" class="boton">Eliminar</button></td>
+                              </tr>
+                        </tbody>
+                    </table>
+                    
+                </div>
+            </div>
+
+            </div>
+
+
+
+        </main>
+
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

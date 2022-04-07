@@ -1,0 +1,116 @@
+body{
+    color: black;
+}
+
+button a{
+    text-decoration: none;
+    color: #000;
+}
+
+button a:hover{
+    color: black;
+}
+
+.container form svg{
+    color: purple;
+    background-color: white;
+    border-radius: 50px;
+    padding: 8px;
+    border: 3px solid gray;
+}
+
+.container img{
+    align-items: flex-end;
+}
+
+.container form{
+    max-width: 450px;
+    padding: 2.5rem;
+    width: 100%;
+}
+
+.container img{
+    width: 500px;
+    height: 150px;
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+}
+
+.btn{
+    color: #000;
+    width: 500px;
+}
+
+.btn-primary{
+    background-color: aquamarine;
+    border-color: rgb(64, 128, 107);
+    font-weight: bold;
+}
+
+.btn-primary:hover{
+    background-color: aquamarine;
+    border-color:white;
+    font-weight: bold;
+    color: #000;
+    box-shadow: 0px 5px 1px rgba(24, 230, 161, 0.378);
+}
+
+
+
+.btn-info{
+    background-color: purple;
+    border: none;
+    font-weight: bold;
+}
+
+.btn-info:hover{
+    box-shadow: 0px 5px 2px rgb(177, 129, 221);
+    background-color: purple;
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+
+.form-label{
+    font-weight: bold;
+}
+
+.form-control{
+    max-width: 420px;
+    width: 100%;
+    border: 4px solid rgb(143, 142, 142);
+}
+
+.form-olvido{
+    color: rgb(2, 171, 171);
+}
+
+.btn-primary1{
+    background-color: aquamarine;
+    border-color: aquamarine;
+    width: 150px;
+    font-weight: bold;
+}
+
+/* ::::::::::::::::::::::: MEDIA QUERIE: Celular ::::::::::::::::::::::::::::::: */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .container img{
+        width: 100%;
+        max-width: 400px;
+        height: 150px;
+        object-fit: contain;
+    }
+    .container form{
+        max-width: 300px;
+        padding: 2.5rem;
+        width: 100%;
+        margin: 0 5rem;
+    }
+
+    .container{
+        margin-left: 0.5rem;
+    }
+}

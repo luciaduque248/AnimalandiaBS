@@ -1,0 +1,174 @@
+.tips{
+    font-style: italic;
+    text-align: left;
+    color: rgb(1, 165, 165);
+}
+
+.tips h1{
+    padding-left: 5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 0px;
+}
+
+.sabes{
+    text-align: right;
+    color: rgba(1, 165, 165, 0.384);
+    
+}
+
+.sabes h3{
+    padding-right: 5rem;
+}
+.parrafoIzq p{
+    max-width: 600px;
+    width: 100%;
+    text-align: justify;
+    font-size: 19px;
+    line-height : 30px;
+}
+
+.parrafoIzq{
+    margin: 0 1rem;
+}
+
+.img-perritos1{
+    width: 95%;
+}
+
+.parrafoDere p{
+    text-align: justify;
+    font-size: 19px;
+    line-height : 30px;
+}
+
+.hueso img{
+    width: 6%;
+}
+
+.img-borde{
+    width: 100px; height: 900px;
+}
+
+.columna img{
+    object-fit: cover;
+    width: 100%;
+    max-width: 600px;
+    height: 100%;
+    max-height: 500px;
+    padding-left: 3rem;
+}
+
+.img-perritos{
+    width: 1900px;
+}
+
+.contenido{
+    display: flex;
+    flex-direction: row;
+}
+
+.parrafoDere{
+    background-image: url(../img/fondoHuellas.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-right: 5rem;
+}
+
+.columna1{
+    width: 600px;
+    margin-left: 3rem;
+    padding-left: 3rem;
+    background-image: url(../img/fondoHuellas.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.columna0{
+    margin:0;
+}
+
+/* ::::::::::::::::::::::: MEDIA QUERIE: Celular ::::::::::::::::::::::::::::::: */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .parrafoDere{
+        background-image: none;
+        padding-right: 0;
+    }
+
+    .parrafoIzq{
+        margin-left: -50px;
+    }
+
+    .parrafoIzq p{
+        max-width: 800px;
+        width: 100%;
+        text-align: justify;
+        font-size: 19px;
+        line-height : 30px;
+    }
+
+    .columna img{
+        padding-left: 1.5rem;
+    }
+
+    .columna0 img{
+        margin-left: -10px;
+        max-width: 550px;
+        width: 100%;
+    }
+    .columna1{
+        width: auto;
+        padding-left: -100px;
+        background-image: none;
+        padding-right: 0;
+    }
+    
+    .contenido{
+        display: flex;
+        flex-direction: column;
+    }
+    .tips h1{
+        background-image: url(../img/hueso.svg);
+        background-position: top;
+        background-repeat: no-repeat;
+        height: 100px;
+        padding-left: 0rem;
+        padding-top: 4rem;
+        text-align: center;
+    }
+
+    .sabes h3{
+        text-align: center;
+        padding-right: 0;
+    }
+    .img-borde{
+        margin: 0 -10rem;
+    }
+    
+
+    .hueso img{
+        width: 20%;
+    }
+}
+/* ::::::::::::::::::::::: MEDIA QUERIE: tableta ::::::::::::::::::::::::::::::: */
+@media (min-width: 481px) and (max-width: 767px){
+    .columna0 img{
+        width: 10px;
+    }
+    .contenido{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tips h1{
+        height: 100px;
+        margin-left: 50rem;
+        padding-top: 4rem;
+        text-align: center;
+    }
+
+}
+

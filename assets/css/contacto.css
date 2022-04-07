@@ -1,0 +1,319 @@
+/* :::::::::::::::::::::::::::::::: PRIMERA PARTE ::::::::::::::::::::::::::::::::*/
+main{
+    background-image: url(../img/fondoHuella.png);
+    background-size: fill;
+    background-position: right;
+}
+
+.texto span{
+    font-weight: bolder;
+}
+
+.texto{
+    display: flex;
+    flex-direction: row;
+}
+.como-icon{
+    background-color: #07ffff;
+    color: blueviolet;
+    font-size: 45px;
+    border-radius: 190px;
+}
+
+
+.contenido{
+    display: flex;
+    flex-direction: row;
+    padding: 3rem 5rem;
+}
+
+.contenido iframe{
+    width: 100%;
+    max-width: 350px;
+    height: 380px;
+}
+.titulo-como h1{
+    font-weight: bold;
+    text-shadow: 2px 2px 2px rgb(173, 172, 172);
+    color: rgb(117, 41, 149);
+}
+
+.espacio i{
+    margin-right: 1rem;
+}
+
+.espacio{
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+/* :::::::::::::::::::::::::::::::: segunda PARTE ::::::::::::::::::::::::::::::::*/
+.botones{
+    max-width: 430px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.botones2{
+    max-width: 550px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.solicitud{
+    display: flex;
+    flex-direction: row;
+}
+
+.fondo{
+    display: flex;
+    flex-direction: row;
+}
+
+.botones3{
+    max-width: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.botones4{
+    max-width: 515px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.opcional{
+    margin-top: -10px;
+    margin-left: 15px;
+    font-size: 12px;
+    font-weight: bolder;
+}
+.observ label{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+section{
+    background-color: #9A80A7;
+    margin-bottom: -8px;
+}
+
+.formulario{
+    padding: 0 8rem;
+    display: flex;
+    flex-direction: row;
+}
+
+
+.form-title{
+    color: #07ffff;
+    font-weight: 600;
+    text-shadow: 3px 3px 7px #3f3d3d;
+}
+
+.titulo{
+    font-weight: 900;
+    text-shadow: 2px 2px 3px #3f3d3d9c;
+    text-align: center;
+}
+
+.text-area{
+    width: 500px;
+}
+
+.text-area-observ{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.enviar, .reestablecer{
+    font-size: 20px;
+}
+
+
+.formu-icon{
+    margin: 0 0.5rem;
+}
+
+
+
+/* ::::::::::::::::::::::: MEDIA QUERIE: Celular ::::::::::::::::::::::::::::::: */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .contenido{
+        flex-direction: column;
+        padding: 3rem 1rem;
+    }
+
+    .texto{
+        flex-direction: column;
+    }
+
+    .espacio{
+        max-width: auto;
+    }
+
+    main{
+        background-image: url(../img/fondoHuella.png);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .formulario{
+        flex-direction: column;
+        padding: 0 1rem;
+        margin: 0 auto;
+    }
+
+    .text-area{
+        padding: 0;
+        margin-left: -20px;
+        width: 280px;
+    }
+
+    .input-group-text{width: 260px;}
+    
+    .input-group{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botones{margin-top: 0.2rem;
+        max-width: 260px;
+        display: flex;
+        flex-direction: column;
+    }
+    .botones2{
+        margin-top: 0.2rem;
+        max-width: 260px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .solicitud{
+        flex-direction: column;
+    }
+
+    .fondo{
+        margin-top: 0.2rem;
+        width: 260px;
+        flex-direction: column;
+    }
+
+    
+    .botones3{
+        margin-top: 0.2rem;
+        max-width: 260px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botones4{
+        max-width: 260px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+/* ::::::::::::::::::::::: MEDIA QUERIE: tableta ::::::::::::::::::::::::::::::: */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    .contenido{
+        flex-direction: row;
+        padding: 3rem 1rem;
+    }
+
+    .texto{
+        flex-direction: column;
+    }
+
+    .espacio{
+        max-width: auto;
+    }
+
+    main{
+        background-image: url(../img/fondoHuella.png);
+        background-size: 50%;
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    .formulario{
+        flex-direction: row;
+        padding: 0 4rem;
+        margin: 0;
+    }
+
+    .cola{
+        margin: 0;
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .text-area{
+        margin: 0;
+        padding: 0;
+        width: 280px;
+    }
+
+    
+    .input-group{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botones{margin-top: 0.2rem;
+        max-width: 1000px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .botones2{
+        margin-top: 0.2rem;
+        max-width: 260px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .solicitud{
+        flex-direction: column;
+    }
+
+    .fondo{
+        margin-top: 0.2rem;
+        width: 260px;
+        flex-direction: column;
+    }
+
+    
+    .botones3{
+        margin-top: 0.2rem;
+        max-width: 260px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botones4{
+        max-width: 260px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .text-area-observ{
+        max-height: 550px;
+        height: 100%;
+    }
+
+}

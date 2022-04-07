@@ -1,0 +1,164 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --dark-color: #191919;
+    --white-color:#ffffff;
+    --purple-color: rgb(117, 41, 149);
+    --purplelight-color: rgb(169, 83, 206);
+    --aqua-color: aqua;
+    --gray-color: gray;
+    --ligh-color: #F3F3F3;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+a{
+    text-decoration: none;
+}
+header .row{
+    padding: 1rem 1.5rem;
+}
+
+.title-seccion{
+    margin-top: 2rem;
+}
+
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.header-buttons i{
+    margin-right: 5px;
+}
+
+.header-buttons a{
+    color: black;
+}
+
+.agenda-cita i{
+    margin-right: 5px;
+}
+
+.btn-primary{
+    color: black;
+    background-color: #05e2e2;
+    border-color: #07ffff;
+}
+
+.btn-primary:hover{
+    color: white;
+    background-color: #91fafa;
+    border-color: blue;
+}
+
+.btn-outline-primary{
+    color:rgb(117, 41, 149);
+    border-color: rgb(117, 41, 149);
+}
+
+.btn-outline-primary:hover{
+    color:white;
+    background-color: rgb(117, 41, 149);
+    border-color: rgb(117, 41, 149);
+}
+
+.header-logo img{
+    max-width: 270px;
+}
+
+/* :::::::::::::::::::::::: CONTENIDO :::::::::::::::::::::::::::::::: */
+
+
+.agenda-cita{
+    background-image: url(../img/fondo.jpg);
+    padding: 3rem;
+}
+
+.agenda-cita h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.agenda-cita h3{
+    font-size: 1.2rem;
+}
+
+.agenda-promo{
+    background-color: rgb(117, 41, 149);
+    padding: 3rem;
+}
+
+
+.agenda-promo h1{
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 2px black;
+}
+
+.title-seccion{
+    color: rgb(117, 41, 149);
+    text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.698);
+    
+}
+
+.card{
+    text-align: center;
+    border: 0px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.25rem;
+}
+
+.card img{
+    max-width: 200px;
+}
+
+.card-body h5{
+    font-weight: bolder;
+}
+
+footer{
+    background-image: url(../img/fondo.jpg);
+    
+    
+}
+
+.capa{
+    background-color: rgba(117, 41, 149, 0.561);
+    color: white;
+    padding: 2rem 0;
+}
+
+.capa p{
+    line-height: 1.2rem;
+}
+
+.capa i{
+    font-size: 50px;
+    color: white;
+}
+
+.text{
+    color: white;
+}
+
+
+.columna-body h5{
+    text-align: center;
+}
+
+.columna i{
+    align-self: center;
+}
+
+.columna-body p{
+    line-height: 5px;
+}
+
