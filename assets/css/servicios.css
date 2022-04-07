@@ -80,7 +80,8 @@ h1 {
     .imagenes{margin: 0 auto; object-fit: contain; width: 80%;}
     .carousel{padding: 1rem 4rem;}
     .carousel-item{height: 500px;}
-    .card-text p{width: 100%; max-width: 190px;}
+    .card-text{width: 100%; max-width: 350px;}
+    .carousel-inner{padding-right: 3rem;}
     .card-title{font-size: 20px;}
 }
 
