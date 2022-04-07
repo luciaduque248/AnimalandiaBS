@@ -39,16 +39,10 @@ h1 {
 
 .carousel {
     width: 100%;
-    background-image: url(../img/fondoServ.webp);
+    background-image: url(../img/fondo.jpg);
     box-shadow: 5px 0px 5px gray;
 }
 
-.carousel-inner{
-    padding-bottom: 1rem;
-    height: 355px;
-    padding-top: 1rem;
-    background-color: rgba(255, 255, 255, 0.765);
-}
 
 .carousel-item {
     height: 300px;
@@ -56,13 +50,13 @@ h1 {
 }
 
 .carousel-control-prev-icon {
-    background-color: aqua;
+    background-color: purple;
     padding: 2rem;
     border-radius: 30%;
 }
 
 .carousel-control-next-icon {
-    background-color: aqua;
+    background-color: purple;
     padding: 2rem;
     border-radius: 30%;
 }
@@ -129,10 +123,7 @@ h1 {
     .imagenes{
         width: 30%;
     }
-    .carousel-item {
-        height: 550px;
-        padding: 0 5rem;
-    }
+    
     
     .slide1 img{
         margin: 0 auto; 
