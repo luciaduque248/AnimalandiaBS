@@ -103,19 +103,12 @@ h1 {
 
     .slide1 img{
         margin: 0 auto; 
-        margin-bottom: 1rem;
     }
 
     .imagenes{
         width: 60%;
     }
 
-    .carousel-inner{
-        padding-bottom: 1rem;
-        height: 380px;
-        padding-top: 1rem;
-        background-color: rgba(255, 255, 255, 0.765);
-    }
 }
 
 /* ::::::::::::::::::::::: MEDIA QUERIE: tableta ::::::::::::::::::::::::::::::: */
@@ -126,7 +119,6 @@ h1 {
     
     .slide1 img{
         margin: 0 auto; 
-        margin-bottom: 1rem;
     }
 
     .imagenes{
