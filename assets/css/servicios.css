@@ -191,6 +191,8 @@ h1 {
         }
     
         .card-title {
+            height: 10px;
+            background-color: red;
             font-size: 20px;
             font-weight: bold;
         }
@@ -238,7 +240,8 @@ h1 {
             max-height: 600px;
         }
     
-        .card-title {
+        .card-title {height: 10px;
+            background-color: blue;
             font-size: 20px;
             font-weight: bold;
         }
