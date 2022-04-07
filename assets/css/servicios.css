@@ -38,8 +38,16 @@ h1 {
 
 
 .carousel {
-    background-image: url(../img/fondo.jpg);
+    width: 100%;
+    background-image: url(../img/fondoServ.webp);
     box-shadow: 5px 0px 5px gray;
+}
+
+.carousel-inner{
+    padding-bottom: 1rem;
+    height: 355px;
+    padding-top: 1rem;
+    background-color: rgba(255, 255, 255, 0.765);
 }
 
 .carousel-item {
@@ -48,13 +56,13 @@ h1 {
 }
 
 .carousel-control-prev-icon {
-    background-color: purple;
+    background-color: aqua;
     padding: 2rem;
     border-radius: 30%;
 }
 
 .carousel-control-next-icon {
-    background-color: purple;
+    background-color: aqua;
     padding: 2rem;
     border-radius: 30%;
 }
@@ -66,12 +74,11 @@ h1 {
 }
 
 
-/* ::::::::::::::::::::::: MEDIA QUERIE: Celular mas Pequeño ::::::::::::::::::::::::::::::: */
-@media only screen and (max-width : 319px){
+/* ::::::::::::::::::::::: MEDIA QUERIE: Celular ::::::::::::::::::::::::::::::: */
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
     .carousel {
         width: 100%;
-        height: 100%;
-        max-height: 600px;
     }
 
     .card-title {
@@ -82,8 +89,8 @@ h1 {
     .card-text {
         font-size: 10px;
         line-height: 10px;
-        max-width: 300px;
-        width: 90%;
+        max-width: 220px;
+        width: 100%;
     }
 
     .slide1 {
@@ -106,55 +113,14 @@ h1 {
     }
 
     .imagenes{
-        width: 30%;
-    }
-}
-
-
-/* ::::::::::::::::::::::: MEDIA QUERIE: Celular ::::::::::::::::::::::::::::::: */
-
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-    .carousel {
-        width: 100%;
-        height: 100%;
-        max-height: 600px;
+        width: 60%;
     }
 
-    .card-title {
-        margin: 0;
-        font-size: 90px;
-        font-weight: bold;
-    }
-
-    .card-text {
-        font-size: 10px;
-        line-height: 10px;
-        max-width: 300px;
-        width: 90%;
-    }
-
-    .slide1 {
-        flex-direction: column;
-    }
-
-    .img-vacuna1 {
-        max-width: 50px;
-        width: 100%;
-    }
-
-    .carousel-item {
-        height: 350px;
-        padding: 0 3rem;
-    }
-
-    .slide1 img{
-        margin: 0 auto; 
-        margin-bottom: 1rem;
-    }
-
-    .imagenes{
-        width: 30%;
-        margin: 0;
+    .carousel-inner{
+        padding-bottom: 1rem;
+        height: 380px;
+        padding-top: 1rem;
+        background-color: rgba(255, 255, 255, 0.765);
     }
 }
 
@@ -162,6 +128,10 @@ h1 {
 @media (min-width: 481px) and (max-width: 767px) {
     .imagenes{
         width: 30%;
+    }
+    .carousel-item {
+        height: 550px;
+        padding: 0 5rem;
     }
     
     .slide1 img{
@@ -176,103 +146,4 @@ h1 {
     .slide1 {
         flex-direction: column;
     }
-}
-
-/* iPhone X and Xs Max */
-@media only screen 
-    and (min-device-width: 375px) 
-    and (min-device-height: 812px) 
-    and (-webkit-device-pixel-ratio: 3)
-    and (orientation: portrait) { 
-        .carousel {
-            width: 100%;
-            height: 100%;
-            max-height: 600px;
-        }
-    
-        .card-title {
-            height: 10px;
-            background-color: red;
-            font-size: 20px;
-            font-weight: bold;
-        }
-    
-        .card-text {
-            font-size: 10px;
-            line-height: 10px;
-            max-width: 300px;
-            width: 90%;
-        }
-    
-        .slide1 {
-            flex-direction: column;
-        }
-    
-        .img-vacuna1 {
-            max-width: 50px;
-            width: 100%;
-        }
-    
-        .carousel-item {
-            height: 350px;
-            padding: 0 3rem;
-        }
-    
-        .slide1 img{
-            margin: 0 auto; 
-            margin-bottom: 1rem;
-        }
-    
-        .imagenes{
-            width: 30%;
-        }
-}
-
-/* iPhone XR */
-@media only screen 
-    and (min-device-width: 414px) 
-    and (min-device-height: 896px) 
-    and (-webkit-device-pixel-ratio: 2) 
-    and (orientation: portrait) { 
-        .carousel {
-            width: 100%;
-            height: 100%;
-            max-height: 600px;
-        }
-    
-        .card-title {height: 10px;
-            background-color: blue;
-            font-size: 20px;
-            font-weight: bold;
-        }
-    
-        .card-text {
-            font-size: 10px;
-            line-height: 10px;
-            max-width: 300px;
-            width: 90%;
-        }
-    
-        .slide1 {
-            flex-direction: column;
-        }
-    
-        .img-vacuna1 {
-            max-width: 50px;
-            width: 100%;
-        }
-    
-        .carousel-item {
-            height: 350px;
-            padding: 0 3rem;
-        }
-    
-        .slide1 img{
-            margin: 0 auto; 
-            margin-bottom: 1rem;
-        }
-    
-        .imagenes{
-            width: 30%;
-        }
 }
